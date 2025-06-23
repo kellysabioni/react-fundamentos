@@ -1,20 +1,11 @@
+import Cabecalho from "./Cabecalho"
+
 export default function App() {
-  // Comentário de uma linha
-  /* Comentários de múltiplas linhas */
   return (
     <>
-      <header>
-        <h1>😱 Olá, React! 😱</h1>
-        <hr />
-        <nav>
-          <a href="">Home</a>
-          <a href="">Sobre</a>
-          <a href="">Contato</a>
-        </nav>
-      </header>
-
-      {/* Comentários no meio do JSX: é normal ficar entre {} */}
-      {/* Ao usar outros elementos HTML no JSX, é importante envolver tudo em um único <></> (Fragmento React) */}
+    {/* Importanto o componente Cabecalho, a sintaxe é o nome do componente dentro da tag 
+    < *Nome do componente* />  */}
+      <Cabecalho/>    
 
       <main>
         <section>
