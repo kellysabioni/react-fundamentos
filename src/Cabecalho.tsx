@@ -1,4 +1,6 @@
 /* Tudo o que for uasdo dentro de componentes (imagens, fontes etc), deve ser importado. Desta forma, no momento do build, haverá otimizações para este conteúdo. */
+import logo from "./Assets/logo-react.png"
+
 export default function Cabecalho() {
   return (
     <header>
