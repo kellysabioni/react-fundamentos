@@ -1,5 +1,9 @@
 # Fundamentos de React
 
+## 05_modulo-css
+
+Módulos CSS (CSS Modules) são uma maneira de escrever CSS em arquivos separadis de extensão `.module.css` em que cada classe e estilo fica isolado para um único compnente. Há um **acoplamento** entre o módulo e seu componente, permitindo um escopo bem definido sobre os estilos.
+
 ## 04_estilos
 - CSS global usando seletores tradicionais 
 - CSS inline via style e escrevendo CSS In JS (objeto com propriedades CSS)
