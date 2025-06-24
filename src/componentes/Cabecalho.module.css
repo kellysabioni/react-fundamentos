@@ -1,0 +1,19 @@
+.topoSite {
+  background-color: #20232a;
+  color: #61dafb;
+  padding: 1rem;
+}
+
+.logo {
+  width: 42px;
+  vertical-align: middle;
+  margin-right: 0.2rem;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    font-size: 1.5rem;
+}
