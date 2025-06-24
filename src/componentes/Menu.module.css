@@ -1,0 +1,20 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  a {
+    text-decoration: none;
+    color: #61dafb;
+    font-weight: bold;
+    margin: 1px;
+    padding: 0.2rem;
+    transition: font-size 0.3s ease;
+
+    &:hover {
+      color: white;
+      transform: scale(1.1);
+    }
+  }
+}

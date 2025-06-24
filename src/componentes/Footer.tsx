@@ -1,5 +1,4 @@
 import type { CSSProperties } from "react";
-import styles from "./Footer.module.css";
 
 const estilosRodape: CSSProperties = {
   backgroundColor: "#222",
