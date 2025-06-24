@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import styles from "./Footer.module.css";
 
 const estilosRodape: CSSProperties = {
   backgroundColor: "#222",
@@ -10,10 +11,10 @@ const estilosRodape: CSSProperties = {
 export default function Footer() {
   return (
     <>
-      <footer style={estilosRodape} >
+      <footer style={estilosRodape}>
         <h2>Pequeno site criado com React </h2>
         <p style={{ color: "red", fontWeight: "bold" }}>
-          Desenvolvido por <b>Kelly Sabioni</b> &copy; 2025{" "}
+          Desenvolvido por <b><a href="">Kelly Sabioni</a></b> &copy; 2025
         </p>
       </footer>
       <hr />
