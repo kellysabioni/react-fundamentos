@@ -1,6 +1,7 @@
+import styles from './Artigo.module.css'
 export default function Artigo() {
   return (
-    <article>
+    <article className={styles.artigo} >
       <h3>Artigo 1 de exemplo </h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
