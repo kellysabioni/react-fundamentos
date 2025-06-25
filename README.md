@@ -1,5 +1,14 @@
 # Fundamentos de React
 
+## 07_tailwindcss
+
+
+> Site oficial
+- https://tailwindcss.com/
+
+> Documentação para uso com Vite
+- https://tailwindcss.com/docs/installation/using-vite
+
 ## 06_styled-components
 
 Styled components é uma biblioteca (lib) muito usada com projetos React que permite escrever estilos CSS dentro do JavaScript usando a própria sintaxa do CSS. Os estilos ficam acoplados ao componente em que foram declarados.
