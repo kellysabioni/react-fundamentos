@@ -16,8 +16,6 @@ export default function Footer() {
           Desenvolvido por <b><a href="">Kelly Sabioni</a></b> &copy; 2025
         </p>
       </footer>
-      <hr />
-      <p className="outro-texto">Qualquer coisa...</p>
     </>
   );
 }
