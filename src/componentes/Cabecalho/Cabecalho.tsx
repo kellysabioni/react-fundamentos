@@ -1,5 +1,5 @@
 import logo from "../../assets/logo-react.png";
-import Menu from "../Menu/Menu";
+import Menu from "../Cabecalho/Menu/Menu";
 
 //Nome nós que definimos, geralmente usado STYLES, mas pode ser qualquer nome
 import estilos from "./Cabecalho.module.css";
