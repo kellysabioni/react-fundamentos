@@ -12,7 +12,7 @@ export default function Footer() {
     <>
       <footer style={estilosRodape}>
         <h2>Pequeno site criado com React </h2>
-        <p style={{ color: "red", fontWeight: "bold" }}>
+        <p style={{ color: "#61dafb", fontWeight: "bold" }}>
           Desenvolvido por <b><a href="">Kelly Sabioni</a></b> &copy; 2025
         </p>
       </footer>
@@ -21,3 +21,4 @@ export default function Footer() {
     </>
   );
 }
+
