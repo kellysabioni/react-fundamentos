@@ -1,6 +1,6 @@
-import Cabecalho from "./componentes/Cabecalho";
-import Conteudo from "./componentes/Conteudo";
-import Footer from "./componentes/Footer";
+import Cabecalho from "./componentes/Cabecalho/Cabecalho";
+import Conteudo from "./componentes/Conteudo/Conteudo";
+import Footer from "./componentes/Footer/Footer";
 
 export default function App() {
   return (
