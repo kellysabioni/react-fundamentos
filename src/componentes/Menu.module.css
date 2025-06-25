@@ -10,11 +10,11 @@
     font-weight: bold;
     margin: 1px;
     padding: 0.2rem;
-    transition: font-size 0.3s ease;
+    transition: font-size 0.2s ease;
 
-    &:hover {
+    &:hover, &:focus {
       color: white;
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
   }
 }
