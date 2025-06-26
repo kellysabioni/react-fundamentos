@@ -16,9 +16,11 @@ export default function Conteudo() {
 
         <p>Este é um exemplo de aplicação React.</p>
 
-        {cursos.map((curso) => (
-          <Artigo dados={curso} key={curso.id} />
-        ))}
+        <div className={styles.artigos}>
+          {cursos.map((curso) => (
+            <Artigo dados={curso} key={curso.id} />
+          ))}
+        </div>
       </section>
 
       <DicaDoDia />
