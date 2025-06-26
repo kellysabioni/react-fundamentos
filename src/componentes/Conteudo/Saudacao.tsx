@@ -3,10 +3,10 @@ type Props = {
   classe: string;
 };
 
-export default function Saudacao(props: Props) {
+export default function Saudacao({nome, classe}: Props) {
   return (
-    <p className={`my-2 rounded text-center ${props.classe} `}>
-      Seja bem-vindo(a) <b>{props.nome}</b>!
+    <p className={`my-2 rounded text-center ${classe} `}>
+      Seja bem-vindo(a) <b>{nome}</b>!
     </p>
   );
 }
