@@ -1,7 +1,12 @@
-export default function Saudacao() {
+type Props = {
+  nome: string;
+  classe: string;
+};
+
+export default function Saudacao(props: Props) {
   return (
-    <h2 className="font-bold text-lg ">
-      Seja bem-vindo(a) aos Fundamentos do React!
-    </h2>
+    <p className={`my-2 rounded text-center ${props.classe} `}>
+      Seja bem-vindo(a) <b>{props.nome}</b>!
+    </p>
   );
 }
