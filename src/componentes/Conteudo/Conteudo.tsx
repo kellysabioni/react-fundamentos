@@ -12,7 +12,7 @@ export default function Conteudo() {
         className={`${styles.principal} ${styles.arredondada} ${styles.sombra}`}
       >
         <h2 className="font-bold text-lg ">Fundamentos do React!</h2>
-        <Saudacao nome="Kelly" classe="bg-emerald-100" />
+        <Saudacao classe="bg-emerald-100" />
         <Saudacao nome="Fulano" classe="bg-red-100" />
 
         <p>Este é um exemplo de aplicação React.</p>
