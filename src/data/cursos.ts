@@ -1,4 +1,6 @@
-const cursos = [
+import type { Curso } from "../types/Curso";
+
+const cursos: Curso[] = [
   { id: 1, titulo: "HTML5 e CSS3", categoria: "Front-End", preco: 500 },
   { id: 2, titulo: "JS e React", categoria: "Front-End", preco: 800 },
   { id: 3, titulo: "React Native", categoria: "Mobile", preco: 1000 },
