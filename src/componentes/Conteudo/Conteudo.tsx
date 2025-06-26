@@ -17,11 +17,24 @@ export default function Conteudo() {
 
         <p>Este é um exemplo de aplicação React.</p>
 
-        <Artigo />
+        <Artigo
+          titulo="Front-End"
+          texto="Corrupti nesciunt quo officiis, distinctio perferendis
+        earum quam unde. Iusto vero distinctio perferendis deleniti?"
+          numero={1}
+        />
 
-        <Artigo />
+        <Artigo
+          titulo="Back-End"
+          texto="Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quasi eligendi! "
+          numero={2}
+        />
 
-        <Artigo />
+        <Artigo
+          titulo="Mobile"
+          texto="Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quasi eligendi! "
+          numero={3}
+        />
       </section>
 
       <DicaDoDia />

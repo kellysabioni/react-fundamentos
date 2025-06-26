@@ -1,13 +1,18 @@
-import styles from './Artigo.module.css'
-export default function Artigo() {
+import styles from "./Artigo.module.css";
+
+type ArtigoProps = {
+  titulo: string;
+  texto: string;
+  numero: number;
+};
+
+export default function Artigo({ titulo, texto, numero }: ArtigoProps) {
   return (
-    <article className={styles.artigo} >
-      <h3>Artigo 1 de exemplo </h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-        quasi eligendi! Corrupti nesciunt quo officiis, distinctio perferendis
-        earum quam unde. Iusto vero distinctio perferendis deleniti?
-      </p>
+    <article className={styles.artigo}>
+      <h3>
+        Artigo {numero}: {titulo}
+      </h3>
+      <p>{texto}</p>
     </article>
   );
 }
