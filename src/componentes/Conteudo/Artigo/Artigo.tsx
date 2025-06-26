@@ -1,31 +1,17 @@
-import type { ReactNode } from "react";
 import styles from "./Artigo.module.css";
+import type { Curso } from "../../../types/Curso";
 
 type ArtigoProps = {
-  titulo: string;
-  numero: number;
-  children: ReactNode;
-  data?: Date;
+  dados: Curso;
 };
 
-export default function Artigo({
-  titulo,
-  numero,
-  children,
-  data,
-}: ArtigoProps) {
+export default function Artigo({ dados }: ArtigoProps) {
+  const { titulo, preco, categoria } = dados;
   return (
     <article className={styles.artigo}>
-      <h3>
-        Artigo {numero}: {titulo}
-      </h3>
-
-      {data && (
-        <p>
-          Data: <time>{data?.toLocaleDateString()}</time>
-        </p>
-      )}
-      {children}
+      <h3> {titulo} </h3>
+      <p><b>Categoria:</b> {categoria}</p>
+      <p><b>Preço:</b> {preco}</p>
     </article>
   );
 }
