@@ -1,5 +1,19 @@
 # Fundamentos de React
 
+## 11_gerenciamento-de-states
+
+Exemplo:
+
+- um componente que exibe um contador de likes
+- Carrinho de compras
+- Captura de dados de formulário
+- Filtros
+- Timers
+- Alternância de temas/cores
+- Seleção de itens
+
+State (estado) é uma funcionalidade especial de um componente que represante informação que podem mudar ao longo do tempo e que, normalmente, afetam o que é exibido na interface.
+
 ## 10_manipulando-eventos
 
 No React, nós declaramos explicitamente o que queremos que o componente faça através de props de eventos.
