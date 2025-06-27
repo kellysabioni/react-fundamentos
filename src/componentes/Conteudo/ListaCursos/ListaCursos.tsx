@@ -2,10 +2,17 @@ import Artigo from "../Artigo/Artigo";
 import cursos from "../../../data/cursos";
 import styles from "./ListaCursos.module.css";
 
-export default function ListaCursos() {
+type ListaCursosProps = {
+  categoria: null | string;
+};
+export default function ListaCursos({ categoria }: ListaCursosProps) {
+  const cursosPorCategoria = categoria
+    ? cursos.filter((curso) => curso.categoria === categoria)
+    : cursos;
+    
   return (
     <div className={styles.artigos}>
-      {cursos.map((curso) => (
+      {cursosPorCategoria.map((curso) => (
         <Artigo dados={curso} key={curso.id} />
       ))}
     </div>

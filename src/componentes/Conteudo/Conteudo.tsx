@@ -24,19 +24,31 @@ export default function Conteudo() {
 
         {categorias.map((categoria) => {
           return (
-            <button onClick={() => setCategoriaAtiva(categoria)} className="rounded py-1 px-2 mr-2 m-3 bg-blue-200 hover:bg-blue-500 ">
+            <button
+              onClick={() => setCategoriaAtiva(categoria)}
+              className="rounded py-1 px-2 mr-2 m-3 bg-blue-200 hover:bg-blue-500 "
+            >
               {categoria}
             </button>
           );
         })}
 
         {categoriaAtiva && (
-          <p>
-            Categoria selecionada: <b>{categoriaAtiva}</b>
-          </p>
+          <>
+            <button
+              onClick={() => setCategoriaAtiva(null)}
+              className="rounded py-1 px-2 mr-2 m-3 bg-blue-200 hover:bg-blue-500 "
+            >
+              Limpar
+            </button>
+
+            <p>
+              Categoria selecionada: <b>{categoriaAtiva}</b>
+            </p>
+          </>
         )}
 
-        <ListaCursos />
+        <ListaCursos categoria={categoriaAtiva} />
       </section>
 
       <DicaDoDia />
