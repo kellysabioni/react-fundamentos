@@ -1,13 +1,18 @@
- .artigo {
-    margin-bottom: 1rem;
-    padding: .25rem;
-    border: 1px solid rgb(179, 177, 177);
-    border-bottom: 4px solid #ccc;
-    border-radius: 8px;
+.artigo {
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+  border: 1px solid rgb(179, 177, 177);
+  border-bottom: 4px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
 
-    h3{
-        color: #21215a;
-        font-weight: bold;
-        font-size: 1.1rem;
-    }
+  h3 {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1rem;
   }
+
+  p {
+    color: #000;
+  }
+}
