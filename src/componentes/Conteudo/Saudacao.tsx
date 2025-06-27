@@ -7,9 +7,14 @@ export default function Saudacao({
   nome = "Visitante",
   classe,
 }: SaudacaoProps) {
+  
+  function exemploEvento() {
+    alert("Evento com chamada de callback externa");
+  }
+
   return (
     <p className={`my-2 rounded text-center ${classe} `}>
-      Seja bem-vindo(a) <b>{nome}</b>!
+      Seja bem-vindo(a) <b onClick={exemploEvento} >{nome}</b>!
     </p>
   );
 }
