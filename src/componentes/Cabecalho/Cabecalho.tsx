@@ -12,7 +12,9 @@ export default function Cabecalho() {
   /* Nós que definimos o nome do parâmento (utilizamos nomes "com sentido" ) */
 
   const alternarTitulo = () => {
-    setTitulo("Mudou 😱😱😱");
+    setTitulo((texto) => {
+      return texto === "Olá, React!" ? "Mudou 😱😱😱" : "Olá, React!";
+    });
   };
   return (
     <header className={estilos.topoSite}>
