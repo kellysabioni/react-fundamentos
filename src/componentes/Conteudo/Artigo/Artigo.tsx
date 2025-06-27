@@ -19,7 +19,7 @@ export default function Artigo({ dados }: ArtigoProps) {
       onClick={selecionaArtigo}
       className={styles.artigo}
       style={{
-        backgroundColor: selecionado ? "#e0f7fa" : "#fff", 
+        backgroundColor: selecionado ? "#e0f7fa" : "#f9f9f9",
       }}
     >
       <h3> {titulo} </h3>
