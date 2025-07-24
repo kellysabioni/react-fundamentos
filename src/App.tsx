@@ -1,6 +1,9 @@
+import { Route, Routes } from "react-router-dom";
 import Cabecalho from "./componentes/Cabecalho/Cabecalho";
-import Conteudo from "./componentes/Conteudo/Conteudo";
 import Footer from "./componentes/Footer/Footer";
+import Home from "./pages/Home";
+import Sobre from "./pages/Sobre";
+import Contato from "./pages/Contato";
 
 export default function App() {
   return (
@@ -9,7 +12,11 @@ export default function App() {
     < *Nome do componente* />  */}
       <Cabecalho />
 
-      <Conteudo />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/contato" element={<Contato />} />
+      </Routes>
 
       <Footer />
     </>
