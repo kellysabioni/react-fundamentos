@@ -4,6 +4,7 @@ import Footer from "./componentes/Footer/Footer";
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Contato from "./pages/Contato";
+import Container from "./componentes/Container/Container";
 
 export default function App() {
   return (
@@ -12,11 +13,13 @@ export default function App() {
     < *Nome do componente* />  */}
       <Cabecalho />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sobre" element={<Sobre />} />
-        <Route path="/contato" element={<Contato />} />
-      </Routes>
+      <Container>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/contato" element={<Contato />} />
+        </Routes>
+      </Container>
 
       <Footer />
     </>
