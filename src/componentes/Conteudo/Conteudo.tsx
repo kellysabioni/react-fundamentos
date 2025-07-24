@@ -1,5 +1,5 @@
 import DicaDoDia from "./DicaDoDia/DicaDoDia";
-import styles from "./Conteudo.module.css";
+//import styles from "./Conteudo.module.css";
 import AvisoImportante from "./AvisoImportante/AvisoImportante";
 import Saudacao from "./Saudacao";
 import ListaCursos from "./ListaCursos/ListaCursos";
@@ -14,9 +14,7 @@ export default function Conteudo() {
 
   return (
     <>
-      <section
-        className={`${styles.principal} ${styles.arredondada} ${styles.sombra}`}
-      >
+      <section>
         <h2 className="font-bold text-lg ">Fundamentos do React!</h2>
         <Saudacao nome="Kelly" classe="bg-blue-100" />
 
