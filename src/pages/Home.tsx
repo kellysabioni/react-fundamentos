@@ -3,7 +3,7 @@ import Conteudo from "../componentes/Conteudo/Conteudo";
 
 export default function Home() {
   useEffect(() => {
-    console.log("Componente Montado/Renderizado");
+    document.title = "Home | Meu app React";
   }, []);
 
   return <Conteudo />;

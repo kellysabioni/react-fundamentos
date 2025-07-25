@@ -1,4 +1,5 @@
 export default function Sobre() {
+  
   return (
     <section>
         <h2>Sobre nossa empresa </h2>
