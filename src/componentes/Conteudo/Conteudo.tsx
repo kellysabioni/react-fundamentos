@@ -1,16 +1,22 @@
 import DicaDoDia from "./DicaDoDia/DicaDoDia";
-//import styles from "./Conteudo.module.css";
 import AvisoImportante from "./AvisoImportante/AvisoImportante";
 import Saudacao from "./Saudacao";
 import ListaCursos from "./ListaCursos/ListaCursos";
 import cursos from "../../data/cursos";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Conteudo() {
   /* Definindo o state para categoria ativa/selecionada podendo ser null (valor padrão/inicial) ou string (quando uma categoria for selecionada) */
   const [categoriaAtiva, setCategoriaAtiva] = useState<null | string>(null);
 
   const categorias = [...new Set(cursos.map((curso) => curso.categoria))];
+
+  /* Trocando o title da página conforme a categoria selecioanda */
+  useEffect(() => {
+    document.title = categoriaAtiva
+      ? `${categoriaAtiva} | Meu app React`
+      : "Home | Meu app React";
+  }, [categoriaAtiva]);
 
   return (
     <>
@@ -23,7 +29,7 @@ export default function Conteudo() {
         {categorias.map((categoria, index) => {
           return (
             <button
-            key={index}
+              key={index}
               onClick={() => setCategoriaAtiva(categoria)}
               className="rounded py-1 px-2 mr-2 m-3 bg-blue-200 hover:bg-blue-500 "
             >
