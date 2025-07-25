@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export default function Pagina404() {
   useEffect(() => {
     document.title = "Ops! Essa página não existe!";
-  });
+  },[]);
   return (
     <div>
       <h1>

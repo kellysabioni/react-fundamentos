@@ -3,8 +3,8 @@ import { useEffect } from "react"
 export default function Contato() {
   useEffect ( () => {
     document.title = "Contato | Fale Conosco"
-  })
-  
+  },[])
+
   return (
     <section>
         <h2>Fale Conosco</h2>
